@@ -6,7 +6,7 @@ It helps users organize daily tasks, set priorities, track deadlines, and monito
 
 
 🚀 Features
-
+```
 📝 Add, edit, and delete tasks
 ✅ Mark tasks as completed
 🔍 Search tasks instantly
@@ -15,13 +15,16 @@ It helps users organize daily tasks, set priorities, track deadlines, and monito
 📊 Progress tracker
 🌙 Light/Dark theme toggle
 💾 Data stored using LocalStorage
+```
 
 🛠️ Tech Stack
+```
 
 HTML5
 CSS3
 JavaScript (Vanilla JS)
 LocalStorage API
+```
 
 📂 Project Structure
 ```
