@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Daily Focus</p>
+        <h1>Smart Task Manager</h1>
+        <p class="subhead">
+          Capture priorities, keep deadlines visible, and ship more calmly with a tidy overview of everything on your plate.
+        </p>
+      </div>
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <main class="dashboard">
+      <section class="panel panel-control">
+        <div class="input-area">
+          <label class="field">
+            <span class="field-label">Task</span>
+            <input type="text" id="taskInput" placeholder="Write the next thing you need to tackle" />
+          </label>
+
+          <div class="field-grid">
+            <label class="field">
+              <span class="field-label">Priority</span>
+              <select id="priorityInput">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Due date</span>
+              <input type="date" id="dateInput" />
+            </label>
+
+            <button id="addBtn" class="primary-btn">Add Task</button>
+          </div>
+        </div>
+
+        <label class="field search-field">
+          <span class="field-label">Quick search</span>
+          <input type="text" id="searchInput" placeholder="Filter by task title" />
+        </label>
+
+        <div class="progress-card">
+          <div class="progress-text">
+            <p class="eyebrow">Progress</p>
+            <p id="progressText" class="progress-value">0% Completed</p>
+          </div>
+          <div id="progressBarContainer">
+            <div id="progressBar"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-list">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Your tasks</p>
+            <h2>Today & upcoming</h2>
+          </div>
+        </div>
+        <ul id="taskList" aria-live="polite"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
